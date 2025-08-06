@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>REGISTRATION FORM</h2>
+  
+  <form action="https://www.hackerrank.com" method="post">
+    <table>
+      <!-- NAME -->
+      <tr>
+        <td><label for="name">NAME</label></td>
+        <td>
+          <select>
+            <option value="MS">MS</option>
+            <option value="MR">MR</option>
+          </select>
+          <input type="text" placeholder="Jasmini" required>
+        </td>
+      </tr>
+      
+      <!-- EMAIL -->
+      <tr>
+        <td><label for="email">EMAIL</label></td>
+        <td><input type="email" placeholder="maddijasamini@gmail.com" required></td>
+      </tr>
+      
+      <!-- DOB -->
+      <tr>
+        <td><label for="dob">DOB</label></td>
+        <td><input type="date" required></td>
+      </tr>
+      
+      <!-- AGE -->
+      <tr>
+        <td><label for="age">AGE</label></td>
+        <td><input type="number" placeholder="AGE" required></td>
+      </tr>
+      
+      <!-- COUNTRY -->
+      <tr>
+        <td><label for="country">COUNTRY</label></td>
+        <td>
+          <select>
+            <option value="india">INDIA</option>
+            <option value="usa">USA</option>
+            <option value="japan">JAPAN</option>
+            <option value="korea">KOREA</option>
+            <option value="uk">UK</option>
+            <option value="greenland">GREENLAND</option>
+          </select>
+        </td>
+      </tr>
+      
+      <!-- YEAR OF PASSING -->
+      <tr>
+        <td><label>YEAR OF PASSING</label></td>
+        <td>
+          <input type="radio" name="year" value="2026"> 2026<br>
+          <input type="radio" name="year" value="2025"> 2025<br>
+          <input type="radio" name="year" value="2024"> 2024
+        </td>
+      </tr>
+      
+      <!-- SKILLS -->
+      <tr>
+        <td>SKILLS</td>
+        <td>
+          <ol>
+            <li><input type="checkbox" name="skills" value="C"> C</li>
+            <li><input type="checkbox" name="skills" value="JAVA"> JAVA</li>
+            <li><input type="checkbox" name="skills" value="DBMS"> DBMS</li>
+            <li><input type="checkbox" name="skills" value="JAVASCRIPT"> JAVA SCRIPT</li>
+            <li><input type="checkbox" name="skills" value="HTML"> HTML</li>
+            <li><input type="checkbox" name="skills" value="CSS"> CSS</li>
+            <li><input type="checkbox" name="skills" value="PHP"> PHP</li>
+            <li><input type="checkbox" name="skills" value="PYTHON"> PYTHON</li>
+          </ol>
+        </td>
+      </tr>
+      
+      <!-- ADDRESS -->
+      <tr>
+        <td><label for="address">ADDRESS</label></td>
+        <td><textarea placeholder="Address" required></textarea></td>
+      </tr>
+      
+      <!-- PHOTO -->
+      <tr>
+        <td>PHOTO</td>
+        <td><input type="file" name="photo" required></td>
+      </tr>
+      
+      <!-- RESUME -->
+      <tr>
+        <td>RESUME</td>
+        <td><input type="file" name="resume" required></td>
+      </tr>
+      
+      <!-- SUBMIT -->
+      <tr>
+        <td colspan="2" class="submit-row">
+          <input type="submit" value="Submit">
+        </td>
+      </tr>
+      
+    </table>
+  </form>
+</body>
+</html>
